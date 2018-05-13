@@ -1,0 +1,32 @@
+{
+  "name": "Website",
+  "version": "0.0.1",
+  "description": "Damien Calesse portfolio",
+  "private": true,
+  "keywords": [],
+  "author": "Damien Calesse <damien.calesse@gmail.com> (http://damien.calesse.fr)",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^7.1.5",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-es2015-ie": "^6.7.0",
+    "bulma": "^0.7.0",
+    "bulma-extensions": "^1.0.28",
+    "node-sass": "^4.5.3",
+    "postcss-cli": "^4.1.1"
+  },
+  "scripts": {
+    "css-deploy": "npm run css-build && npm run css-postcss",
+    "css-build": "node-sass src/css/main.scss dist/css/main.min.css --output-style compressed --source-map true",
+    "css-postcss": "postcss --use autoprefixer --output dist/css/main.min.css dist/css/main.min.css",
+    "css-watch": "npm run css-build -- --watch",
+    "deploy": "npm run css-deploy && npm run js-build",
+    "js-build": "babel src/js --out-dir dist/js",
+    "js-watch": "npm run js-build -- --watch",
+    "start": "npm run css-watch | npm run js-watch"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}

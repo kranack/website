@@ -1,0 +1,44 @@
+// 1. Import the initial variables
+@import "../../node_modules/bulma/sass/utilities/initial-variables";
+@import "../../node_modules/bulma/sass/utilities/functions";
+
+// 2. Set your own initial variables
+// Update blue
+$blue: #72d0eb;
+// Green
+$green: #7cb342;
+$light-green: #aed581;
+// Add a serif family
+//$family-serif: "Merriweather", "Georgia", serif;
+
+// 3. Set the derived variables
+// Use the new green as the primary color
+$primary: $green;
+$primary-invert: #fff;
+// Use the existing orange as the danger color
+$danger: $orange;
+// Use the new serif family
+//$family-primary: $family-serif;
+
+// 4. Setup your Custom Colors
+$linkedin: #0077b5;
+$linkedin-invert: findColorInvert($linkedin);
+$twitter: #55acee;
+$twitter-invert: findColorInvert($twitter);
+$github: #333;
+$github-invert: findColorInvert($github);
+
+// 5. Add new color variables to the color map.
+@import "../../node_modules/bulma/sass/utilities/derived-variables";
+$addColors: (
+  "twitter":($twitter, $twitter-invert),
+  "linkedin": ($linkedin, $linkedin-invert),
+  "github": ($github, $github-invert)
+);
+$colors: map-merge($colors, $addColors);
+
+// Timeline
+$timeline-marker-icon-size: 1.7em;
+$timeline-marker-color: $green;
+$timeline-line-color: $light-green;
+$timeline-icon-size: $size-normal;
