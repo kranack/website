@@ -54,18 +54,36 @@ $separator-color: #9e9e9e !default;
 }
 
 .image {
+	cursor: pointer;
+
 	&.is-248x248 {
 		height: 248px;
 		width: 248px;
 	}
-	&.is-rounded > img {
-		border-radius: 50%;
+
+	&.is-400x400 {
+		height: 400px;
+		width: 400px;
 	}
+
 	&.animate > img {
 		box-shadow: 0 0 1vw #212121;
 	}
 	&.animate > img:hover {
 		box-shadow: 0 0 2vw #212121;
+	}
+
+	&.elevate > img {
+		transition: all ease-out .25s;
+
+		&:hover {
+		transition: all ease-in .25s;
+			transform: translateY(-1vh);
+		}
+	}
+
+	&.is-squared > img {
+		border-radius: 4%;
 	}
 }
 

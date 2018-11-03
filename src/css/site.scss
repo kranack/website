@@ -79,6 +79,20 @@
 
 #work {
 	background-color: #9e9e9e;
+
+	.work, .work > div {
+		display: flex;
+		flex: auto;
+	}
+
+	.work > div {
+		align-items: center;
+		justify-content: center;
+	}
+
+	#j2s img {
+		background-color: #fff;
+	}
 }
 
 /** FOOTER **/
