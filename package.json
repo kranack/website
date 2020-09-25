@@ -7,14 +7,14 @@
   "author": "Damien Calesse <damien.calesse@gmail.com> (http://damien.calesse.fr)",
   "license": "MIT",
   "devDependencies": {
-    "autoprefixer": "^7.1.5",
+    "autoprefixer": "^10",
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.0",
     "babel-preset-es2015-ie": "^6.7.0",
-    "bulma": "^0.7.0",
-    "bulma-extensions": "^1.0.28",
+    "bulma": "^0.9.0",
+    "bulma-timeline": "^3.0",
     "node-sass": "^4.5.3",
-    "postcss-cli": "^4.1.1"
+    "postcss-cli": "^8"
   },
   "scripts": {
     "css-deploy": "npm run css-build && npm run css-postcss",
