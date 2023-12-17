@@ -1,0 +1,102 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "data.schema",
+  "title": "Data Schema",
+  "description": "Schema for portfolio data",
+  
+  "type": "object",
+  "properties": {
+    "github": {
+      "description": "Github section",
+      "type": "object",
+      "properties": {
+        "username": {
+          "type": "string"
+        }
+      },
+      "required": ["username"]
+    },
+    "work": {
+      "description": "Work section",
+      "type": "object",
+      "properties": {
+        "projects": {
+          "description": "Projects",
+          "type": "array",
+          "items": {
+            "description": "Project",
+            "type": "object",
+            "properties": {
+              "name": {
+                "description": "Project's name",
+                "type": "string"
+              },
+              "description": {
+                "description": "Project's description",
+                "type": "string"
+              },
+              "langs": {
+                "description": "Project's languages",
+                "type": "array",
+                "items": {
+                  "description": "Project's language",
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "description": "Language's name",
+                      "type": "string"
+                    },
+                    "icon": {
+                      "description": "Language's icon",
+                      "type": "string",
+                      "default": ""
+                    },
+                    "useIonic": {
+                      "description": "Use Ionic icon",
+                      "type": "boolean",
+                      "default": false
+                    }
+                  },
+                  "required": ["name"]
+                }
+              }
+            },
+            "required": ["name", "langs"]
+          }
+        }
+      },
+      "required": ["projects"]
+    },
+    "contact": {
+      "description": "Contact section",
+      "type": "object",
+      "properties": {
+        "email": {
+          "description": "Email",
+          "type": "string"
+        },
+        "social": {
+          "description": "Social networks",
+          "type": "array",
+          "items": {
+            "description": "Social network",
+            "type": "object",
+            "properties": {
+              "name": {
+                "description": "Social network's name",
+                "type": "string"
+              },
+              "icon": {
+                "description": "Social network's icon",
+                "type": "string"
+              }
+            },
+            "required": ["name", "icon"]
+          }
+        }
+      },
+      "required": ["email"]
+    }
+  },
+  "required": ["work", "contact"]
+}

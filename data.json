@@ -1,0 +1,61 @@
+{
+  "$schema": "./data.schema.json",
+  "github": {
+    "username": "kranack"
+  },
+  "work": {
+    "projects": [
+      {
+        "name": "Spotify UI",
+        "description": "Une interface pour gérer ses playlists Spotify",
+        "langs": [
+          { "name": "spotify" },
+          { "name": "javascript", "icon": "js" },
+          { "name": "reactjs", "icon": "react" },
+          { "name": "sass" },
+          { "name": "nodejs", "icon": "node" },
+          { "name": "electronjs", "icon": "electron", "useIonic": true }
+        ]
+      },
+      {
+        "name": "Genealogy",
+        "description": "Une application Open-Source de généalogie",
+        "langs": [
+          { "name": "javascript", "icon": "js" },
+          { "name": "reactjs", "icon": "react" },
+          { "name": "sass" },
+          { "name": "nodejs", "icon": "node" },
+          { "name": "electronjs", "icon": "electron", "useIonic": true }
+        ]
+      },
+      {
+        "name": "VOD",
+        "description": "Un service de partage simple de fichiers",
+        "langs": [
+          { "name": "html5", "useIonic": true },
+          { "name": "css3", "useIonic": true },
+          { "name": "sass" },
+          { "name": "php" },
+          { "name": "laravel" }
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "email": "damien@calesse.fr",
+    "social": [
+      {
+        "name": "Github",
+        "icon": "github"
+      },
+      {
+        "name": "Twitter",
+        "icon": "twitter"
+      },
+      {
+        "name": "Linkedin",
+        "icon": "linkedin"
+      }
+    ]
+  }
+}
