@@ -1,0 +1,62 @@
+@charset 'utf-8'
+@import "../node_modules/bulma/bulma.sass"
+@import "../node_modules/react-responsive-carousel/lib/styles/carousel.min.css"
+
+@import "../node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+
+// Section
+section .tile.is-parent
+  justify-content: space-between
+
+section .tile.is-child > .icons
+  @extend .content
+
+// Carousel
+.carousel-root > .carousel-slider > button
+  position: absolute
+  top: calc(50% - 10px)
+  z-index: 2
+
+  &.previous
+    left: 10px
+
+  &.next
+    right: 10px
+
+// Github
+.section-github
+  @extend .container
+  display: flex
+  flex-direction: column
+  align-items: center
+
+// Icons
+.icon-spotify
+  color: #1db954
+
+.icon-javascript
+  color: #f0db4f
+
+.icon-reactjs
+  color: rgb(20, 158, 202)
+
+.icon-sass
+  color: #c69
+
+.icon-nodejs
+  color: #5fa04e
+
+.icon-electronjs
+  color: #a2ecfb
+
+.icon-html5
+  color: #f16529
+
+.icon-css3
+  color: #2965f1
+
+.icon-php
+  color: #777bb3
+
+.icon-laravel
+  color: #ff2d20
