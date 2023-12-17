@@ -15,7 +15,10 @@
           { "name": "sass" },
           { "name": "nodejs", "icon": "node" },
           { "name": "electronjs", "icon": "electron", "useIonic": true }
-        ]
+        ],
+        "carousel": {
+          "images": ["spotify-ui-splash.png", "spotify-ui-connect.png"]
+        }
       },
       {
         "name": "Genealogy",

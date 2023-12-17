@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types'
+import Carousel from '../utils/Carousel'
 
-function Project({ name, description, langs }) {
+function Project({ name, description, langs, carousel }) {
   const getLangClass = (lang) => {
     return `icon icon-${lang}`
   }
@@ -22,12 +23,8 @@ function Project({ name, description, langs }) {
           )
         })}
       </p>
-      <hr/>
-      {
-        /*
-        <Carousel images={[ 'spotify-ui-splash.png', 'spotify-ui-connect.png' ]} />
-        */
-      }
+      { carousel && <hr/> }
+      { carousel && <Carousel images={carousel.images || []} /> }
     </div>
   )
 }
@@ -36,6 +33,7 @@ Project.propTypes = {
   name: PropTypes.string.isRequired,
   description: PropTypes.string,
   langs: PropTypes.array.isRequired,
+  carousel: PropTypes.object,
 }
 
 function Projects({ projects }) {
@@ -43,7 +41,7 @@ function Projects({ projects }) {
     <div className="tile is-ancestor">
       <div className="tile is-parent">
         {projects.map((project,index) => {
-          return <Project name={project.name} description={project.description} langs={project.langs} key={index}/>
+          return <Project name={project.name} description={project.description} langs={project.langs} carousel={project.carousel} key={index}/>
         })}
       </div>
     </div>

@@ -59,6 +59,20 @@
                   },
                   "required": ["name"]
                 }
+              },
+              "carousel": {
+                "description": "Project's carousel",
+                "type": "object",
+                "properties": {
+                  "images": {
+                    "description": "Project's carousel images",
+                    "type": "array",
+                    "items": {
+                      "description": "Project's carousel image",
+                      "type": "string"
+                    }
+                  }
+                }
               }
             },
             "required": ["name", "langs"]
