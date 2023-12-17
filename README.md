@@ -10,12 +10,12 @@ Currently, two official plugins are available:
 ## Libraries
 
 ### CSS & Icons
-- [sass](https://sass.org) as CSS pre-processor
+- [sass](https://sass-lang.com) as CSS pre-processor
 - [bulma](https://bulma.io) as CSS framework
-- [font-awesome](https://fontawesome.com) and [ionicons](https://ionic.io/icons) for icons
+- [font-awesome](https://fontawesome.com) and [ionicons](https://ionic.io/ionicons) for icons
 
 ### JS
-- [react](https://reactjs.dev) as JS framework
+- [react](https://react.dev) as JS framework
 - [react-github-calendar](https://grubersjoe.github.io/react-github-calendar/) as React component for Github contributions
 - [react-obfuscate](https://github.com/coston/react-obfuscate) as React component for obfuscating contact email
 - [react-responsive-carousel](https://github.com/leandrowd/react-responsive-carousel) as React component for project's carousel
