@@ -49,15 +49,13 @@
     "social": [
       {
         "name": "Github",
-        "icon": "github"
-      },
-      {
-        "name": "Twitter",
-        "icon": "twitter"
+        "icon": "github",
+        "url": "https://github.com/kranack"
       },
       {
         "name": "Linkedin",
-        "icon": "linkedin"
+        "icon": "linkedin",
+        "url": "https://www.linkedin.com/in/damien-calesse-8ba86472"
       }
     ]
   }

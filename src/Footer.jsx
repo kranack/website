@@ -8,10 +8,12 @@ function Footer({ email, social }) {
           {social.map((item, index) => {
             return (
               <span className="icon-text" key={index}>
-                <span className="icon">
+                <span className={`icon icon-${item.icon}`}>
                   <i className={`fab fa-${item.icon}`}></i>
                 </span>
-                <span>{item.name}</span>
+                <a href={item.url} target="_blank" rel="noreferrer">
+                  <span>{item.name}</span>
+                </a>
               </span>
             )
           })}

@@ -103,9 +103,13 @@
               "icon": {
                 "description": "Social network's icon",
                 "type": "string"
+              },
+              "url": {
+                "description": "Social's network url",
+                "type": "string"
               }
             },
-            "required": ["name", "icon"]
+            "required": ["name", "icon", "url"]
           }
         }
       },
