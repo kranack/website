@@ -1,6 +1,7 @@
 import GitHubCalendar from "react-github-calendar";
+import PropTypes from 'prop-types';
 
-export default function GithubSection({ username }) {
+function GithubSection({ username }) {
   return (
     <section className="section is-medium">
       <div id="github" className="section-github">
@@ -17,3 +18,9 @@ export default function GithubSection({ username }) {
     </section>
   )
 }
+
+GithubSection.propTypes = {
+  username: PropTypes.string.isRequired
+}
+
+export default GithubSection

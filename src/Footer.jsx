@@ -1,4 +1,5 @@
 import Obfuscate from "react-obfuscate";
+import PropTypes from 'prop-types';
 
 function Footer({ email, social }) {
   return (
@@ -29,6 +30,11 @@ function Footer({ email, social }) {
       </div>
     </footer>
   )
+}
+
+Footer.propTypes = {
+  email: PropTypes.string.isRequired,
+  social: PropTypes.array.isRequired,
 }
 
 export default Footer
