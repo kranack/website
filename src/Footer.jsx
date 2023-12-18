@@ -20,7 +20,7 @@ function Footer({ email, social }) {
         </p>
         <p>
           <span className="icon-text">
-            <span className="icon">
+            <span className="icon has-text-info">
               <i className="fas fa-envelope"></i>
             </span>
             <span><Obfuscate email={email} /></span>

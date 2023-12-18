@@ -20,6 +20,15 @@
       "description": "Work section",
       "type": "object",
       "properties": {
+        "title": {
+          "description": "Work section's title",
+          "type": "string"
+        },
+        "subtitle": {
+          "description": "Work section's subtitle",
+          "type": "string",
+          "default": ""
+        },
         "projects": {
           "description": "Projects",
           "type": "array",
@@ -79,7 +88,7 @@
           }
         }
       },
-      "required": ["projects"]
+      "required": ["title", "projects"]
     },
     "contact": {
       "description": "Contact section",

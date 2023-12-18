@@ -52,17 +52,19 @@ Projects.propTypes = {
   projects: PropTypes.array.isRequired
 }
 
-function WorkSection({ projects }) {
+function WorkSection({ title, subtitle, projects }) {
   return (
     <section id="me" className="section is-large has-background-info">
-      <p className="title has-text-white">Mes réalisations</p>
-      <p className="subtitle has-text-grey-lighter">Des trucs que j&apos;ai fait</p>
+      <p className="title has-text-white">{title}</p>
+      <p className="subtitle has-text-grey-lighter">{subtitle || ''}</p>
       <Projects projects={projects} />
     </section>
   )
 }
 
 WorkSection.propTypes = {
+  title: PropTypes.string.isRequired,
+  subtitle: PropTypes.string,
   projects: PropTypes.array.isRequired
 }
 

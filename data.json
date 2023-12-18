@@ -4,6 +4,8 @@
     "username": "kranack"
   },
   "work": {
+    "title": "Mes réalisations",
+    "subtitle": "Des trucs que j'ai fait",
     "projects": [
       {
         "name": "Spotify UI",
