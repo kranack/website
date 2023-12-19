@@ -1,0 +1,15 @@
+{
+  "$schema": "./schemas/resume.schema.json",
+
+  "infos": {
+    "name": "Damien Calesse",
+    "email": "damien@calesse.fr",
+    "github": "kranack"
+  },
+  "projects": [
+    {
+      "date": "2023",
+      "name": "Spotify UI"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+@charset 'utf-8'
+
+$green: #64DD17
+$link: #689F38
+
+@import "../../node_modules/bulma/bulma.sass"
+
+
+body
+  @extend .has-background-black-bis
+  min-height: 100vh
+
+.resume
+  @extend .container
+  //@extend .has-text-white-bis
+  @extend .has-text-success
+  @extend .has-text-weight-semibold
+  @extend .is-family-monospace
+
+  .cursor, .result.command
+    &::before
+      left: 0
+      top: 0
+      content: '>'
+      padding-right: .5rem
+
+  .cursor
+    &::after
+      right: 0
+      content:"_"
+      padding-left: .25rem
+    
+      animation: caretBlink 1.5s infinite
+
+  .results
+    margin-bottom: 1rem
+
+    .result > div
+      margin-left: 1rem
+
+@keyframes caretBlink
+  0%
+    opacity: 0
+  
+  50%
+    opacity: 0
+  
+  51%
+    opacity: 1
+  
+  100%
+    opacity: 1

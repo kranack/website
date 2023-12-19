@@ -1,0 +1,62 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "resume.schema",
+  "title": "Resume Schema",
+  "description": "Schema for resume data",
+
+  "properties": {
+    "infos": {
+      "description": "Personal informations",
+      "type": "object",
+
+      "properties": {
+        "name": {
+          "description": "Name",
+          "type": "string"
+        },
+        "email": {
+          "description": "Email",
+          "type": "string"
+        },
+        "github": {
+          "description": "Github's username",
+          "type": "string"
+        }
+      },
+
+      "required": ["name"]
+    },
+    "projects": {
+      "description": "Personal projects",
+      "type": "array",
+
+      "items": {
+        "description": "Personal project",
+        "type": "object",
+
+        "properties": {
+          "date": {
+            "description": "Personal project's date",
+            "type": "string"
+          },
+          "name": {
+            "description": "Personal project's name",
+            "type": "string"
+          },
+          "langs": {
+            "description": "Personal project's langs",
+            "type": "array",
+
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+
+        "required": ["date", "name"]
+      }
+    }
+  },
+
+  "required": ["infos"]
+}

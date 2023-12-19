@@ -35,6 +35,9 @@ function Navbar() {
           <a className="navbar-item" href="#footer">
             Contact
           </a>
+          <a className="navbar-item" href="/cv">
+            CV
+          </a>
         </div>
 
         <div className="navbar-end">
