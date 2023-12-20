@@ -82,6 +82,21 @@
                     }
                   }
                 }
+              },
+              "status": {
+                "description": "Project's status",
+                "type": ["string", "object"],
+                "properties": {
+                  "label": {
+                    "description": "Status label",
+                    "type": "string"
+                  },
+                  "style": {
+                    "description": "Status style",
+                    "type": "string"
+                  }
+                },
+                "required": ["label", "style"]
               }
             },
             "required": ["name", "langs"]

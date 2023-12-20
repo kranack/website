@@ -20,7 +20,8 @@
         ],
         "carousel": {
           "images": ["spotify-ui-splash.png", "spotify-ui-connect.png"]
-        }
+        },
+        "status": "En cours"
       },
       {
         "name": "Genealogy",
@@ -31,7 +32,8 @@
           { "name": "sass" },
           { "name": "nodejs", "icon": "node" },
           { "name": "electronjs", "icon": "electron", "useIonic": true }
-        ]
+        ],
+        "status": "En cours"
       },
       {
         "name": "VOD",
@@ -42,7 +44,11 @@
           { "name": "sass" },
           { "name": "php" },
           { "name": "laravel" }
-        ]
+        ],
+        "status": {
+          "label": "Terminé",
+          "style": "is-primary"
+        }
       }
     ]
   },

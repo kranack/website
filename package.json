@@ -15,6 +15,7 @@
     "@fortawesome/free-solid-svg-icons": "^6.5.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "bulma": "^0.9.4",
+    "bulma-ribbon": "^0.1.1",
     "ionicons": "^7.2.2",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",

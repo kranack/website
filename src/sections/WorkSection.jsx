@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import Carousel from '../utils/Carousel'
 
-function Project({ name, description, langs, carousel }) {
+function Project({ name, description, langs, carousel, status }) {
   const getLangClass = (lang) => {
     return `icon icon-${lang}`
   }
@@ -11,7 +11,8 @@ function Project({ name, description, langs, carousel }) {
   }
 
   return (
-    <div className="tile is-child is-3 box">
+    <div className="tile is-child is-3 box has-ribbon">
+      { status && <div className={`ribbon ${status?.style || 'is-info'}`}>{status?.label || status}</div> }
       <p className="title">{name}</p>
       <p className="subtitle is-6">{description || ''}</p>
       <p className="icons">
@@ -34,6 +35,7 @@ Project.propTypes = {
   description: PropTypes.string,
   langs: PropTypes.array.isRequired,
   carousel: PropTypes.object,
+  status: PropTypes.string,
 }
 
 function Projects({ projects }) {
@@ -41,7 +43,7 @@ function Projects({ projects }) {
     <div className="tile is-ancestor">
       <div className="tile is-parent">
         {projects.map((project,index) => {
-          return <Project name={project.name} description={project.description} langs={project.langs} carousel={project.carousel} key={index}/>
+          return <Project name={project.name} description={project.description} langs={project.langs} carousel={project.carousel} status={project.status} key={index}/>
         })}
       </div>
     </div>
