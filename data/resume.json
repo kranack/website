@@ -4,12 +4,21 @@
   "infos": {
     "name": "Damien Calesse",
     "email": "damien@calesse.fr",
-    "github": "kranack"
+    "github": "kranack",
+    "location": "Ottawa, ON, Canada"
   },
   "projects": [
     {
       "date": "2023",
       "name": "Spotify UI"
+    },
+    {
+      "date": "2023",
+      "name": "Genealogy"
+    },
+    {
+      "date": "2017",
+      "name": "Email server setup"
     }
   ]
 }

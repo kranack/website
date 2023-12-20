@@ -21,6 +21,10 @@
         "github": {
           "description": "Github's username",
           "type": "string"
+        },
+        "location": {
+          "description": "Personal location",
+          "type": "string"
         }
       },
 

@@ -1,21 +1,29 @@
 @charset 'utf-8'
 
-$green: #64DD17
-$link: #689F38
-
 @import "../../node_modules/bulma/bulma.sass"
 
-
-body
-  @extend .has-background-black-bis
-  min-height: 100vh
+@import 'crt_effect'
+//@import 'crt'
 
 .resume
-  @extend .container
   //@extend .has-text-white-bis
-  @extend .has-text-success
+  //@extend .has-text-success
   @extend .has-text-weight-semibold
   @extend .is-family-monospace
+
+  @extend .has-background-black-bis
+  display: flex
+  min-height: 100vh
+
+  color: #64DD17
+  cursor: url('https://cdn.custom-cursor.com/db/cursor/32/Seashell_Pixel_Cursor.png') 0 0, default
+
+  a
+    color: #689F38
+    cursor: url('https://cdn.custom-cursor.com/db/pointer/32/Seashell_Pixel_Pointer.png') 0 0, pointer
+
+  .terminal
+    @extend .container
 
   .cursor, .result.command
     &::before
