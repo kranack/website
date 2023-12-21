@@ -35,7 +35,7 @@ Project.propTypes = {
   description: PropTypes.string,
   langs: PropTypes.array.isRequired,
   carousel: PropTypes.object,
-  status: PropTypes.string,
+  status: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
 }
 
 function Projects({ projects }) {

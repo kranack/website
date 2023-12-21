@@ -1,7 +1,9 @@
 import PropTypes from 'prop-types'
+import { useState } from 'react'
 import { Carousel as ICarousel } from 'react-responsive-carousel'
 
 function Carousel({ images }) {
+  const [isHovered, setHovered] = useState(false)
   const renderArrowPrev = (clickHandler, hasPrev, label) => {
     return <button className="button previous is-rounded" onClick={clickHandler} aria-label={label} disabled={!hasPrev}>
             <span className="icon is-small">
@@ -18,16 +20,22 @@ function Carousel({ images }) {
           </button>
   }
 
+  const handleHover = () => {
+    setHovered(!isHovered)
+  }
+
   return (
-    <ICarousel showArrows={true} autoFocus={true} showThumbs={false} showStatus={false} showIndicators={false} renderArrowPrev={renderArrowPrev} renderArrowNext={renderArrowNext}>
-      {images.map((image, index) => {
-        return (
-          <figure className="image" key={index}>
-            <img src={image} />
-          </figure>
-        )
-      })}
-    </ICarousel>
+    <div onMouseEnter={handleHover} onMouseLeave={handleHover}>
+      <ICarousel showArrows={true} autoFocus={true} showThumbs={false} showStatus={false} showIndicators={false} renderArrowPrev={renderArrowPrev} renderArrowNext={renderArrowNext} className={isHovered ? '' : 'hidden-controls'}>
+        {images.map((image, index) => {
+          return (
+            <figure className="image" key={index}>
+              <img src={image} />
+            </figure>
+          )
+        })}
+      </ICarousel>
+    </div>
   )
 }
 

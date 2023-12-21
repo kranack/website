@@ -6,6 +6,25 @@
   
   "type": "object",
   "properties": {
+    "navbar": {
+      "description": "Navigation bar",
+      "type": "array",
+      "items": {
+        "description": "Navigation bar items",
+        "type": "object",
+        "properties": {
+          "url": {
+            "description": "Item url",
+            "type": "string"
+          },
+          "label": {
+            "description": "Item label",
+            "type": "string"
+          }
+        },
+        "required": ["label", "url"]
+      }
+    },
     "github": {
       "description": "Github section",
       "type": "object",

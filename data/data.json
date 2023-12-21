@@ -3,9 +3,31 @@
   "github": {
     "username": "kranack"
   },
+  "navbar": [
+    {
+      "label": "Home",
+      "url": "/"
+    },
+    {
+      "label": "Projets",
+      "url": "#me"
+    },
+    {
+      "label": "Github",
+      "url": "#github"
+    },
+    {
+      "label": "Contact",
+      "url": "#contact"
+    },
+    {
+      "label": "CV",
+      "url": "/cv"
+    }
+  ],
   "work": {
     "title": "Mes réalisations",
-    "subtitle": "Des trucs que j'ai fait",
+    "subtitle": "Projets personnels en cours de développement ou actifs",
     "projects": [
       {
         "name": "Spotify UI",
@@ -18,7 +40,10 @@
           { "name": "nodejs", "icon": "node" },
           { "name": "electronjs", "icon": "electron", "useIonic": true }
         ],
-        "status": "En cours"
+        "status": "En cours",
+        "carousel": {
+          "images": ["spotify-ui-splash.png","spotify-ui-connect.png"]
+        }
       },
       {
         "name": "Genealogy",
@@ -45,6 +70,9 @@
         "status": {
           "label": "Terminé",
           "style": "is-primary"
+        },
+        "carousel": {
+          "images": ["vod.png"]
         }
       }
     ]

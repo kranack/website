@@ -1,5 +1,6 @@
+import PropTypes from 'prop-types'
 
-function Navbar() {
+function Navbar({ navbar }) {
   let navbarElement = null
   let navbarBurgerElement = null
 
@@ -23,21 +24,13 @@ function Navbar() {
 
       <div className="navbar-menu" ref={node => navbarElement = node}>
         <div className="navbar-start">
-          <a className="navbar-item" href="/">
-            Home
-          </a>
-          <a className="navbar-item" href="#me">
-            Moi
-          </a>
-          <a className="navbar-item" href="#github">
-            Github
-          </a>
-          <a className="navbar-item" href="#footer">
-            Contact
-          </a>
-          <a className="navbar-item" href="/cv">
-            CV
-          </a>
+          {navbar.map((item, index) => {
+            return (
+              <a className="navbar-item" href={item.url} key={index}>
+                {item.label}
+              </a>
+            )
+          })}
         </div>
 
         <div className="navbar-end">
@@ -46,6 +39,10 @@ function Navbar() {
       </div>
     </nav>
   )
+}
+
+Navbar.propTypes = {
+  navbar: PropTypes.array.isRequired,
 }
 
 export default Navbar

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 function Footer({ email, social }) {
   return (
-    <footer id="footer" className="footer">
+    <footer id="contact" className="footer">
       <div className="content has-text-centered">
         <p>
           {social.map((item, index) => {
