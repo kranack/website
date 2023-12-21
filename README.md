@@ -25,6 +25,7 @@ Run the build script
 - [sass](https://sass-lang.com) as CSS pre-processor
 - [bulma](https://bulma.io) as CSS framework
 - [font-awesome](https://fontawesome.com) and [ionicons](https://ionic.io/ionicons) for icons
+- [bulma-ribbon](https://github.com/Wikiki/bulma-ribbon) for projects status indicator
 
 ### JS
 - [react](https://react.dev) as JS framework

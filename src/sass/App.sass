@@ -8,6 +8,9 @@
 // Icons
 @import 'icons'
 
+html
+  scroll-behavior: smooth
+
 // Section
 section .tile.is-parent
   justify-content: space-between
@@ -19,7 +22,7 @@ section .tile.is-child > .icons
 .ribbon
   padding-bottom: .1em
   border-left-width: .2rem
-  clip-path: polygon(0 0,100% 0,100% 100%,0 100%,0 calc(100% - .1em),.5em 50%,0 .1em)
+  clip-path: polygon(0 0,100% 0,100% 100%,0 100%,0 100%,.5em 50%,0 0)
 
 // Carousel
 .carousel-root > .carousel-slider > button

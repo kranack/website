@@ -18,9 +18,6 @@
           { "name": "nodejs", "icon": "node" },
           { "name": "electronjs", "icon": "electron", "useIonic": true }
         ],
-        "carousel": {
-          "images": ["spotify-ui-splash.png", "spotify-ui-connect.png"]
-        },
         "status": "En cours"
       },
       {
@@ -41,7 +38,7 @@
         "langs": [
           { "name": "html5", "useIonic": true },
           { "name": "css3", "useIonic": true },
-          { "name": "sass" },
+          { "name": "javascript", "icon": "js" },
           { "name": "php" },
           { "name": "laravel" }
         ],
