@@ -87,7 +87,7 @@ function Projects({ projects, limit }) {
       <div className="tile is-ancestor">
           {projects.slice((currentPage-1)*_limit, (currentPage*_limit)).map((project,index) => {
             return (
-              <div className="tile is-4 is-parent is-vertical" key={index}>
+              <div className="tile is-4 is-parent" key={index}>
                 <Project name={project.name} description={project.description} langs={project.langs} carousel={project.carousel} status={project.status} link={project.link} />
               </div>
             )
