@@ -125,6 +125,11 @@
         "url": "https://github.com/kranack"
       },
       {
+        "name": "Gitlab",
+        "icon": "gitlab",
+        "url": "https://git.calesse.fr/kranack"
+      },
+      {
         "name": "Linkedin",
         "icon": "linkedin",
         "url": "https://www.linkedin.com/in/damien-calesse-8ba86472"
