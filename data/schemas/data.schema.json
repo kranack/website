@@ -48,6 +48,11 @@
           "type": "string",
           "default": ""
         },
+        "limit": {
+          "description": "Limite de projets à afficher",
+          "type": "number",
+          "default": 3
+        },
         "projects": {
           "description": "Projects",
           "type": "array",
@@ -116,6 +121,21 @@
                   }
                 },
                 "required": ["label", "style"]
+              },
+              "link": {
+                "description": "Project's link",
+                "type": ["string", "object"],
+                "properties": {
+                  "icon": {
+                    "description": "Link icon",
+                    "type": "string"
+                  },
+                  "url": {
+                    "description": "Link url",
+                    "type": "string"
+                  }
+                },
+                "required": ["icon", "url"]
               }
             },
             "required": ["name", "langs"]

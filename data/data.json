@@ -30,34 +30,6 @@
     "subtitle": "Projets personnels en cours de développement ou actifs",
     "projects": [
       {
-        "name": "Spotify UI",
-        "description": "Une interface pour gérer ses playlists Spotify",
-        "langs": [
-          { "name": "spotify" },
-          { "name": "javascript", "icon": "js" },
-          { "name": "reactjs", "icon": "react" },
-          { "name": "sass" },
-          { "name": "nodejs", "icon": "node" },
-          { "name": "electronjs", "icon": "electron", "useIonic": true }
-        ],
-        "status": "En cours",
-        "carousel": {
-          "images": ["spotify-ui-splash.png","spotify-ui-connect.png"]
-        }
-      },
-      {
-        "name": "Genealogy",
-        "description": "Une application Open-Source de généalogie",
-        "langs": [
-          { "name": "javascript", "icon": "js" },
-          { "name": "reactjs", "icon": "react" },
-          { "name": "sass" },
-          { "name": "nodejs", "icon": "node" },
-          { "name": "electronjs", "icon": "electron", "useIonic": true }
-        ],
-        "status": "En cours"
-      },
-      {
         "name": "VOD",
         "description": "Un service de partage simple de fichiers",
         "langs": [
@@ -73,6 +45,73 @@
         },
         "carousel": {
           "images": ["vod.png"]
+        },
+        "link": {
+          "icon": "fab fa-github icon-github",
+          "url": "https://github.com/kranack/listdir"
+        }
+      },
+      {
+        "name": "Spotify UI",
+        "description": "Une interface pour gérer ses playlists Spotify",
+        "langs": [
+          { "name": "spotify" },
+          { "name": "sass" },
+          { "name": "javascript", "icon": "js" },
+          { "name": "reactjs", "icon": "react" },
+          { "name": "nodejs", "icon": "node" },
+          { "name": "electronjs", "icon": "electron", "useIonic": true }
+        ],
+        "status": "En cours",
+        "carousel": {
+          "images": ["spotify-ui-splash.png","spotify-ui-connect.png"]
+        },
+        "link": {
+          "icon": "fab fa-github icon-github",
+          "url": "https://github.com/kranack/spotify-ui"
+        }
+      },
+      {
+        "name": "Genealogy",
+        "description": "Une application Open-Source de généalogie",
+        "langs": [
+          { "name": "sass" },
+          { "name": "javascript", "icon": "js" },
+          { "name": "reactjs", "icon": "react" },
+          { "name": "nodejs", "icon": "node" },
+          { "name": "electronjs", "icon": "electron", "useIonic": true }
+        ],
+        "status": "En cours"
+      },
+      {
+        "name": "Site web",
+        "description": "Refonte graphique de mon site internet",
+        "langs": [
+          { "name": "html5", "useIonic": true },
+          { "name": "css3", "useIonic": true },
+          { "name": "sass" },
+          { "name": "javascript", "icon": "js" },
+          { "name": "reactjs", "icon": "react" }
+        ],
+        "status": "En cours",
+        "link": {
+          "icon": "fab fa-github icon-github",
+          "url": "https://github.com/kranack/website"
+        }
+      },
+      {
+        "name": "Mumble",
+        "description": "Librairie Mumble pour PHP",
+        "langs": [
+          { "name": "php" }
+        ],
+        "status": {
+          "label": "En pause",
+          "style": "is-warning"
+        },
+        "link": {
+          "icon": "fab fa-gitlab icon-gitlab",
+          "url": "https://git.calesse.fr/mumble/mumble.git"
         }
       }
     ]

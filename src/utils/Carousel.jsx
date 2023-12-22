@@ -25,7 +25,7 @@ function Carousel({ images }) {
   }
 
   return (
-    <div onMouseEnter={handleHover} onMouseLeave={handleHover}>
+    <div className='carousel-container' onMouseEnter={handleHover} onMouseLeave={handleHover}>
       <ICarousel showArrows={true} autoFocus={true} showThumbs={false} showStatus={false} showIndicators={false} renderArrowPrev={renderArrowPrev} renderArrowNext={renderArrowNext} className={isHovered ? '' : 'hidden-controls'}>
         {images.map((image, index) => {
           return (

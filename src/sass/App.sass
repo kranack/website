@@ -11,12 +11,28 @@
 html
   scroll-behavior: smooth
 
+// Projects
+
+// Navigation
+.projects-pagination > a
+  border: none
+
+
 // Section
-section .tile.is-parent
+section .tile.is-ancestor
   justify-content: space-between
 
-section .tile.is-child > .icons
-  @extend .content
+section .tile.is-child
+  display: flex
+  flex-direction: column
+  //> .icons
+    //@extend .content
+  .link
+    position: absolute
+    top: 3.5em
+    right: 0
+    z-index: 2
+    padding: 0 .75em
 
 // Ribbons
 .ribbon
@@ -24,7 +40,13 @@ section .tile.is-child > .icons
   border-left-width: .2rem
   clip-path: polygon(0 0,100% 0,100% 100%,0 100%,0 100%,.5em 50%,0 0)
 
+
 // Carousel
+.carousel-container
+  display: flex
+  flex: 1 1 auto
+  align-items: center
+
 .carousel-root.hidden-controls
   button
     opacity: 0

@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <Navbar navbar={navbar} />
-      <WorkSection title={work.title} subtitle={work.subtitle} projects={work.projects} />
+      <WorkSection title={work.title} subtitle={work.subtitle} projects={work.projects} limit={work.limit} />
       <GithubSection username={github.username} />
       <Footer email={contact.email} social={contact.social} />
     </>
