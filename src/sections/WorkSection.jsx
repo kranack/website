@@ -102,12 +102,39 @@ Projects.propTypes = {
   limit: PropTypes.number,
 }
 
-function WorkSection({ title, subtitle, limit, projects }) {
+function WorkSection({ title, subtitle, limit, sorts, projects }) {
+
+  const compare = (a, b, asc) => {
+    if (asc ? (a < b) : (a > b)) return -1
+    else if (a === b) return 0
+
+    return 1
+  }
+
+  const sort = (projects, sorts) => {
+    const sProjects = projects
+
+    sProjects.sort((a, b) => {
+      let result = false
+      
+      sorts.forEach(sort => {
+        let isAsc = sort.asc === undefined ? true : sort.asc
+
+        if (typeof a[sort.name] === 'object' || typeof b[sort.name] === 'object') result |= compare(a[sort.name].value || a[sort.name].label || a[sort.name], b[sort.name].value || b[sort.name].label || b[sort.name], isAsc)
+        else result |= compare(a[sort.name], b[sort.name], isAsc)
+      })
+
+      return result
+    })
+
+    return sProjects
+  }
+
   return (
     <section id="me" className="section is-large has-background-info">
       <p className="title has-text-white">{title}</p>
       <p className="subtitle has-text-grey-lighter">{subtitle || ''}</p>
-      <Projects projects={projects} limit={limit} />
+      <Projects projects={sort(projects, sorts)} limit={limit} />
     </section>
   )
 }
@@ -116,6 +143,7 @@ WorkSection.propTypes = {
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string,
   limit: PropTypes.number,
+  sorts: PropTypes.array,
   projects: PropTypes.array.isRequired
 }
 

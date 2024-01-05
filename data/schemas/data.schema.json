@@ -118,6 +118,10 @@
                   "style": {
                     "description": "Status style",
                     "type": "string"
+                  },
+                  "value": {
+                    "description": "Status value for sorting",
+                    "type": "number"
                   }
                 },
                 "required": ["label", "style"]
@@ -139,6 +143,26 @@
               }
             },
             "required": ["name", "langs"]
+          }
+        },
+        "sorts": {
+          "description": "Tris à appliquer sur les projets",
+          "type": "array",
+          "items": {
+            "description": "Définition du tri",
+            "type": "object",
+            "properties": {
+              "name": {
+                "description": "Nom du champ",
+                "type": "string"
+              },
+              "asc": {
+                "description": "Ascendant",
+                "type": "boolean",
+                "default": true
+              }
+            },
+            "required": ["name"]
           }
         }
       },

@@ -107,12 +107,19 @@
         ],
         "status": {
           "label": "En pause",
-          "style": "is-warning"
+          "style": "is-warning",
+          "value": 999
         },
         "link": {
           "icon": "fab fa-gitlab icon-gitlab",
           "url": "https://git.calesse.fr/mumble/mumble.git"
         }
+      }
+    ],
+    "sorts": [
+      {
+        "name": "status",
+        "asc": false
       }
     ]
   },
