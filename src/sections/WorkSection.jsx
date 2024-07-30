@@ -22,7 +22,7 @@ function Project({ name, description, langs, carousel, status, link }) {
   }
 
   return (
-    <div className="tile is-child is-12 box has-ribbon">
+    <div className="box is-12 has-ribbon">
       { status && <div className={`ribbon ${status?.style || 'is-info'}`}>{status?.label || status}</div> }
       { getLink() }
       <p className="title">{name}</p>
@@ -84,10 +84,10 @@ function Projects({ projects, limit }) {
   return (
     <>
       {renderPagination()}
-      <div className="tile is-ancestor">
+      <div className="grid">
           {projects.slice((currentPage-1)*_limit, (currentPage*_limit)).map((project,index) => {
             return (
-              <div className="tile is-4 is-parent" key={index}>
+              <div className="cell is-4" key={index}>
                 <Project name={project.name} description={project.description} langs={project.langs} carousel={project.carousel} status={project.status} link={project.link} />
               </div>
             )

@@ -1,5 +1,25 @@
 @charset 'utf-8'
-@import "../../node_modules/bulma/bulma.sass"
+
+@use "sass:color"
+@use "sass:map"
+@use "bulma/sass" as bulma
+
+// global variables for bulma-ribbon
+$colors: ("white": (bulma.$white, bulma.$black), "black": (bulma.$black, bulma.$white), "light": (bulma.$light, bulma.$dark), "dark": (bulma.$dark, bulma.$light), "info": (bulma.$info, bulma.$light))
+$grey-darker: bulma.$grey-darker
+$grey-lighter: bulma.$grey-lighter
+$white: bulma.$white
+
+$size-small: bulma.$size-small
+$size-normal: bulma.$size-normal
+$size-medium: bulma.$size-medium
+$size-large: bulma.$size-large
+
+//@debug $grey-darker
+
+//@use "bulma-ribbon/dist/css/bulma-ribbon.sass"
+
+//@import "../../node_modules/bulma/bulma.scss"
 @import "../../node_modules/bulma-ribbon/src/sass/index"
 @import "../../node_modules/react-responsive-carousel/lib/styles/carousel.min.css"
 
