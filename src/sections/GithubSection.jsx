@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { useEffect, useState } from "react";
 
 function GithubSection({ username }) {
-  const [dataTheme, setDataTheme] = useState(null);
+  const [dataTheme, setDataTheme] = useState('light');
 
   const onChange = (mutationList) => {
     for (const mutation of mutationList) {
